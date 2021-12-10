@@ -1,3 +1,9 @@
 out/*
 *.exe
 .vs/*
+CMakeFiles/*
+ALL_BUILD*
+ZERO_CHECK*
+rt-one-week/Debug
+rt-one-week/CMakeFiles
+rt-one-week/rt-one-week.dir

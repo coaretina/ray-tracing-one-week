@@ -1,10 +1,21 @@
 #include "Renderer.h"
+#include "Renderer.h"
+#include "Renderer.h"
 #include <iostream>
 
 
 Renderer::Renderer() : width(DEFAULT_WIDTH), height(DEFAULT_HEIGHT) {};
 
-Renderer::Renderer(const size_t width, const size_t height) : width(width), height(height) {};
+Renderer::Renderer(const size_t width, const size_t height) : width(width), height(height) {}
+void Renderer::setWidth(const size_t width)
+{
+	this->width = width;
+}
+
+void Renderer::setHeight(const size_t height)
+{
+	this->height = height;
+}
 
 Renderer::~Renderer() {}
 
@@ -12,6 +23,7 @@ size_t Renderer::getHeight()
 {
 	return this->height;
 }
+
 
 size_t Renderer::getWidth()
 {

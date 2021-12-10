@@ -13,8 +13,8 @@ public:
 	Renderer();
 	Renderer(const size_t, const size_t);
 	
-	void setWidth();
-	void setHeight();
+	void setWidth(const size_t);
+	void setHeight(const size_t);
 	size_t getWidth();
 	size_t getHeight();
 	void writeHeader(std::ostream& os);
