@@ -306,9 +306,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\Aco\source\repos\ray-tracing-one-week\rt-one-week\Source.cpp" />
+    <ClCompile Include="Ray.cpp" />
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="Vector3D.cpp" />
     <ClInclude Include="C:\Users\Aco\source\repos\ray-tracing-one-week\rt-one-week\Source.h" />
+    <ClInclude Include="Ray.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Vector3D.h" />
   </ItemGroup>

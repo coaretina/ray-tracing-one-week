@@ -84,6 +84,11 @@ std::ostream& Vector3D::operator<<(std::ostream& out)
 	return out << this->e[0] << ' ' << this->e[1] << ' ' << this->e[2];
 }
 
+Vector3D Vector3D::operator=(const Vector3D& other)
+{
+	return Vector3D(other);
+}
+
 Vector3D Vector3D::operator+(const Vector3D& u)
 {
 	return Vector3D(u.e[0] + this->e[0], u.e[1] + this->e[1], u.e[2] + this->e[2]);
@@ -121,6 +126,11 @@ Vector3D operator*(double t, const Vector3D& v)
 Vector3D operator*(const Vector3D& v, double t)
 {
 	return t * v;
+}
+
+Vector3D operator+(const Vector3D& u, const Vector3D& v)
+{
+	return Vector3D(u.e[0] + v.e[0], u.e[1] + v.e[1], u.e[2] + v.e[2]);
 }
 
 Vector3D operator/(Vector3D v, double t)

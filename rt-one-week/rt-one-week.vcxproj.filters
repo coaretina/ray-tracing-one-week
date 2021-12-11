@@ -10,6 +10,9 @@
     <ClCompile Include="Vector3D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Ray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\Aco\source\repos\ray-tracing-one-week\rt-one-week\Source.h">
@@ -19,6 +22,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Vector3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -16,12 +16,14 @@ public:
 	friend Vector3D cross(const Vector3D&, const Vector3D&);
 	friend Vector3D operator/(Vector3D, double);
 	friend Vector3D operator*(const Vector3D&, double);
+	friend Vector3D operator+(const Vector3D&, const Vector3D&);
 	double getX() const;
 	double getY() const;
 	double getZ() const;
 	double operator[](unsigned i) const;
 	double& operator[](unsigned i);
 	std::ostream& operator<<(std::ostream&);
+	Vector3D operator=(const Vector3D&);
 	Vector3D operator-() const;
 	Vector3D& operator+=(const Vector3D&);
 	Vector3D operator+(const Vector3D&);
@@ -36,6 +38,9 @@ public:
 public:
 	double e[3];
 };
+
+using Point3D = Vector3D;
+using Color = Vector3D;
 
 
 

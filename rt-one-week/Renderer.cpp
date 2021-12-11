@@ -3,7 +3,7 @@
 #include "Renderer.h"
 #include <iostream>
 #include <fstream>
-
+#include "Vector3D.h"
 
 Renderer::Renderer() : width(DEFAULT_WIDTH), height(DEFAULT_HEIGHT) {};
 
@@ -47,6 +47,7 @@ void Renderer::writeTestImage(std::ostream& os)
 		}
 	}
 }
+
 
 void Renderer::writeHeader(std::ostream& os)
 {
