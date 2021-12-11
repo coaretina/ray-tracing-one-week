@@ -113,23 +113,23 @@ Vector3D cross(const Vector3D& u, const Vector3D& v)
 		u.e[0] * v.e[1] - u.e[1] * v.e[0]);
 }
 
-inline Vector3D operator*(double t, const Vector3D& v)
+Vector3D operator*(double t, const Vector3D& v)
 {
 	return Vector3D(t * v.e[0], t * v.e[1], t * v.e[2]);
 }
 
-inline Vector3D operator*(const Vector3D& v, double t)
+Vector3D operator*(const Vector3D& v, double t)
 {
 	return t * v;
 }
 
-inline Vector3D operator/(Vector3D v, double t)
+Vector3D operator/(Vector3D v, double t)
 {
 	return (1 / t) * v;
 }
 
 
-inline Vector3D unit_vector(Vector3D v)
+Vector3D unit_vector(Vector3D v)
 {
 	return v / v.length();
 }
